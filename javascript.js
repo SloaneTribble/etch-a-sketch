@@ -1,4 +1,4 @@
-let dimension = 16;
+let dimension = 100;
 
 
 const gridContainer = document.querySelector(".grid-container");
@@ -8,15 +8,17 @@ gridContainer.classList.add('column');
 for(let i = 0; i < dimension; i++){
 
     const row = document.createElement('div');
+    row.style.display = "flex";
+    row.style.flexDirection = "column";
     row.style.borderColor = "black";
     row.style.borderWidth = "5px";
 
     for(j = 0; j < dimension; j++){
         const column = document.createElement('div');
-        column.style.width = "100%";
-        column.style.padding = "100%";
+        column.style.width = "5px";
+        column.style.padding = "5px";
         column.style.margin = "5px";
-        column.style.textAlign = "center";
+        column.style.flexGrow = 1;
         column.style.height = "5px";
         column.style.width = "5px";
         column.style.borderWidth = "5px";
@@ -30,10 +32,12 @@ for(let i = 0; i < dimension; i++){
     gridContainer.appendChild(row);
 }
 
-gridContainer.style.display = "flex";
-gridContainer.style.flex = "1";
-gridContainer.style.justifyContent = "space-between";
+const outerContainer = document.querySelector("outer-container");
 
+
+gridContainer.style.display = "flex";
+gridContainer.style.flexGrow = "1";
+gridContainer.style.justifyContent = "space-between";
 
 
 
