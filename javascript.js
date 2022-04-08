@@ -15,12 +15,11 @@ for(let i = 0; i < dimension; i++){
 
     for(j = 0; j < dimension; j++){
         const column = document.createElement('div');
-        column.style.width = "5px";
-        column.style.padding = "5px";
-        column.style.margin = "5px";
-        column.style.flexGrow = 1;
-        column.style.height = "5px";
-        column.style.width = "5px";
+        column.style.width = "5px"; // 
+        column.style.padding = "5px"; // Removing lines 18-20 causes squares to disappear
+        column.style.margin = "5px"; //
+        column.style.flexGrow = "1";
+        column.style.flexShrink = "1";
         column.style.borderWidth = "5px";
         column.style.borderColor = "black";
         column.style.backgroundColor = "pink";
