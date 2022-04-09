@@ -31,13 +31,23 @@ function generateGrid(dimension){
     }
 }
 
+generateGrid(dimension);
+
 const button = document.querySelector(".reset");
 button.addEventListener('click', () => {
     gridContainer.innerHTML = '';
     generateGrid(5);
 });
 
-generateGrid(dimension);
+let slider = document.getElementById("myRange");
+let output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function (){
+    output.innerHTML = this.value;
+    gridContainer.innerHTML = '';
+    generateGrid(this.value);
+}
 
 
 
