@@ -1,4 +1,11 @@
-.outer-container{
-    width: 500px;
-    height: 500px;
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header {
+    padding: 32px;
 }
