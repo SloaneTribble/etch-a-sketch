@@ -1,5 +1,6 @@
 
 const gridContainer = document.querySelector(".grid-container");
+gridContainer.style.backgroundColor = "white";
 gridContainer.style.display = "flex";
 gridContainer.style.flexDirection = "column";
 gridContainer.style.width = "700px";

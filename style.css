@@ -4,6 +4,7 @@ html {
 }
 
 body {
+    background: linear-gradient(65deg, white, rgb(215, 195, 195));
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
     flex-direction: column;
