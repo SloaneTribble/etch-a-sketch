@@ -11,11 +11,40 @@ body {
     align-items: center;
 }
 
+button{
+    margin-bottom: 25px;
+    padding: 25px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    background: white;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+button:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+button.rainbow{
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+}
+
+.buttons{
+    display: flex;
+    flex: 1;
+}
+
 .header {
-    padding: 32px;
+    padding: 24px;
 }
 
 .slidecontainer {
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -49,4 +78,8 @@ body {
     height: 25px;
     background: grey;
     cursor: pointer;
+}
+
+p{
+    margin-top: 5px;
 }
